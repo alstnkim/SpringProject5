@@ -62,11 +62,11 @@ public class BoardController {
         return "home";
     }
 
-    @RequestMapping(value = "/board/index/{id}", method = RequestMethod.GET)
-    public String index(@PathVariable("id") int id, Model model){
+    @RequestMapping(value = "/board/view/{id}", method = RequestMethod.GET)
+    public String view(@PathVariable("id") int id, Model model){
         BoardVO boardVO = boardService.getBoard(id);
         model.addAttribute("boardVO", boardVO);
-        return "index";
+        return "view";
     }
 
 

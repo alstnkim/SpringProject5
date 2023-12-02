@@ -46,6 +46,7 @@
 	<th>이름</th>
 	<th style="width: 120px;">리허설 참여 여부</th>
 	<th>등록일</th>
+	<th>View</th>
 	<th>Edit</th>
 	<th>Delete</th>
 </tr>
@@ -58,6 +59,7 @@
 		<td>${u.getName()}</td>
 		<td style="width: 120px;">${u.getContent()}</td>
 		<td>${u.getRegdate()}</td>
+		<td><a href="view/${u.seq}">View</a></td>
 		<td><a href="editform/${u.getSeq()}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
 	</tr>

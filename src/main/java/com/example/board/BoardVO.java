@@ -49,17 +49,18 @@ public class BoardVO {
         this.name = name;
     }
 
-    public String getContent() {
-        return content;
-    }
-    public void setContent(String content) {
-        this.content = content;
-    }
     public Date getRegdate() {
         return regdate;
     }
     public void setRegdate(Date regdate) {
         this.regdate = regdate;
+    }
+
+    public String getContent() {
+        return content;
+    }
+    public void setContent(String content) {
+        this.content = content;
     }
     public int getCnt() {
         return cnt;
@@ -67,4 +68,6 @@ public class BoardVO {
     public void setCnt(int cnt) {
         this.cnt = cnt;
     }
+
+
 }
